@@ -59,9 +59,9 @@ class TermsOfUseView extends React.Component {
     return (
       <span>
         <style dangerouslySetInnerHTML={{ __html: `
-          @import url(E:\\css\\normalize.css);
-          @import url(E:\\css\\webflow.css);
-          @import url(E:\\css\\equal-crypto-people.webflow.css);
+          @import url(/css/normalize.css);
+          @import url(/css/webflow.css);
+          @import url(/css/equal-crypto-people.webflow.css);
         ` }} />
         <span className="af-view">
           <div>

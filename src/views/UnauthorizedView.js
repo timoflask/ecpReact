@@ -60,15 +60,15 @@ class UnauthorizedView extends React.Component {
     return (
       <span>
         <style dangerouslySetInnerHTML={{ __html: `
-          @import url(E:\\css\\normalize.css);
-          @import url(E:\\css\\webflow.css);
-          @import url(E:\\css\\equal-crypto-people.webflow.css);
+          @import url(/css/normalize.css);
+          @import url(/css/webflow.css);
+          @import url(/css/equal-crypto-people.webflow.css);
         ` }} />
         <span className="af-view">
           <div>
             <div className="af-class-utility-page-wrap af-class-colored">
               <div className="af-class-utility-page-content w-password-page w-form">
-                <form action="/.wf_auth" method="post" id="email-form" name="email-form" data-name="Email Form" className="af-class-utility-page-content w-password-page"><img src="images/key.png" alt className="af-class-large-icon" />
+                <form action="/.wf_auth" method="post" id="email-form" name="email-form" data-name="Email Form" className="af-class-utility-page-content w-password-page"><img src="images/key.png" className="af-class-large-icon" />
                   <h2 className="af-class-h2 af-class-white">Protected Page</h2><label htmlFor="pass" className="af-class-text af-class-white">Password</label><input type="password" className="af-class-input af-class-padding w-password-page w-input" autofocus="true" maxLength={256} name="pass" data-name="field" placeholder="Enter your password" id="pass" /><input type="submit" defaultValue="Submit" data-wait="Please wait..." id="w-node-_6135e960eb12793727699bc0000000000013-8ced4f12" className="af-class-download-button w-password-page w-button" />
                   <div className="w-password-page w-form-fail">
                     <div>Incorrect password. Please try again.</div>

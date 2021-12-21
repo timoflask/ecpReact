@@ -87,7 +87,7 @@ class NotFoundView extends React.Component {
               </div>
             </div>
             <div className="af-class-utility-page-wrap">
-              <div className="af-class-utility-page-content w-form"><img src="images/error-404-1.png" alt sizes="100px" srcSet="images/error-404-1-p-500.png 500w, images/error-404-1.png 512w" className="af-class-large-icon" />
+              <div className="af-class-utility-page-content w-form"><img src="images/error-404-1.png" sizes="100px" srcSet="images/error-404-1-p-500.png 500w, images/error-404-1.png 512w" className="af-class-large-icon" />
                 <h2 className="af-class-h2">Page Not Found</h2>
                 <div className="af-class-text">The page you are looking for doesn't exist or has been moved</div>
                 <a href="index.html" className="af-class-primary-button w-button">Go Back Home</a>

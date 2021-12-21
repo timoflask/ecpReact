@@ -3,15 +3,15 @@
 const styles = [
   {
     type: 'href',
-    body: 'E:\\css\\normalize.css',
+    body: '/css/normalize.css',
   },
   {
     type: 'href',
-    body: 'E:\\css\\webflow.css',
+    body: '/css/webflow.css',
   },
   {
     type: 'href',
-    body: 'E:\\css\\equal-crypto-people.webflow.css',
+    body: '/css/equal-crypto-people.webflow.css',
   },
 ]
 
