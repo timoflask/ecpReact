@@ -1,16 +1,23 @@
 import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ReactDOM from 'react-dom';
 import './index.css';
 
 import "./scripts/index.js";
 import "./styles/index.js"
 import IndexView from "./views/IndexView";
+import Mint from "./views/Mint";
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <IndexView  />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<IndexView />} />
+        <Route path="/mint" element={<Mint />} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );

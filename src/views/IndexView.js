@@ -1,6 +1,7 @@
 /* eslint-disable */
 
 import React from 'react'
+import { Link } from "react-router-dom";
 import { createScope, map, transformProxies } from './helpers'
 
 const scripts = [
@@ -73,8 +74,12 @@ class IndexView extends React.Component {
                   <a href="#Agenda" className="af-class-nav-link af-class-left-margin w-nav-link">Roadmap </a>
                   <a href="#Speakers" className="af-class-nav-link af-class-left-margin w-nav-link">team</a>
                   <a href="#Contact" className="af-class-nav-link af-class-left-margin w-nav-link">Contact</a>
-                  <div className="af-class-buttons-container">
-                    <a href="#" className="af-class-primary-button w-button">Connect Wallet</a>
+                  <div className="af-class-buttons-container"
+                      style={{
+                        whiteSpace : 'nowrap'
+                      }}>
+                    <a href="#" 
+                      className="af-class-primary-button w-button">Connect Wallet</a>
                   </div>
                 </nav>
                 <div className="af-class-menu-button w-nav-button">
@@ -125,11 +130,33 @@ class IndexView extends React.Component {
                     <h2 data-w-id="2a4e826d-972b-9756-0c5c-ea029763ce77" style={{opacity: 1}} className="af-class-h2 af-class-margin">WHO ARE THE&nbsp;ECP?</h2>
                     <div data-w-id="2a4e826d-972b-9756-0c5c-ea029763ce79" style={{opacity: 1}} className="af-class-text">Before going underground, there was a population of the world that survived solely by the curation of art and music – but then the war happened…<br /><br />Imagine a world where…regardless of race, creed, gender, or socioeconomic status – you were considered a lifeline to the very thing that would keep us alive… oxygen.<br /><br />In our world, oxygen is the curation of art and music – globally.<br /><br />The world you’re entering into is the Equal Crypto People – The ECP…<br /><br />The ECP went underground because there was a war against humanity – and the embrace of culture. It is your duty, as a member of the ECP, to share some of the best art and music that touches your soul – and that you feel others should breathe. <br /><br />Remember… our oxygen is art and music – we are depending on you. <br /><br />We must find all of the ECPs that went underground…Take a look at our roadmap to begin the journey back.</div>
                     <div className="af-class-columns-2 w-row">
-                      <div className="w-col w-col-6">
-                        <a href="#" className="af-class-primary-button af-class-_2 w-button">Mint your ECP&nbsp;Male</a>
+                      <div className="w-col w-col-6"
+                        style={{
+                          whiteSpace : 'nowrap',
+                          textOverflow: 'ellipsis',
+                          overflow: 'hidden'
+                        }}>
+                        <Link to="/mint" className="af-class-primary-button af-class-_2 w-button" 
+                         style={{
+                          textOverflow: 'ellipsis',
+                          overflow: 'hidden'
+
+                         }}
+                        >
+                        Mint your ECP&nbsp;Male
+                        </Link>
                       </div>
-                      <div className="w-col w-col-6">
-                        <a href="#" className="af-class-primary-button af-class-_2 w-button">Mint your ECP&nbsp;FEMale</a>
+                      <div className="w-col w-col-6"
+                        style={{
+                          whiteSpace : 'nowrap',
+                        }}>
+                        <Link to="/mint" className="af-class-primary-button af-class-_2 w-button"
+                        
+                        style={{
+                          textOverflow: 'ellipsis',
+                          overflow: 'hidden'
+
+                         }}>Mint your ECP&nbsp;FEMale</Link>
                       </div>
                     </div>
                   </div>
@@ -167,23 +194,23 @@ class IndexView extends React.Component {
                 <div className="af-class-center-container">
                   <h2 data-w-id="c7399da4-4767-7835-dc3a-0b382c8a1a4f" style={{opacity: 1}} className="af-class-h2 af-class-dark">EQUAL CRYPTO PEOPLE&nbsp;TEAM</h2>
                 </div>
-                <div className="af-class-main-grid af-class-top-margin af-class-ec">
-                  <div id="w-node-e989fd78-2815-49b1-4555-2373e61b0508-3eed4f0e" data-w-id="e989fd78-2815-49b1-4555-2373e61b0508" style={{opacity: 1}} className="af-class-small-container">
+                <div className="w-col w-col-12">
+                  <div className="w-col w-col-3 af-class-small-container" style={{opacity: 1}}>
                     <div className="af-class-avatar-wrapper"><img src="images/Male-Sample-2.png" loading="lazy" srcSet="images/Male-Sample-2-p-500.png 500w, images/Male-Sample-2-p-800.png 800w, images/Male-Sample-2.png 1000w" sizes="(max-width: 479px) 89vw, (max-width: 991px) 20vw, 61.712501525878906px" alt="Co-Creator of Equal Crypto People" className="af-class-image-section" /></div>
                     <h3 className="af-class-h4 af-class-dark">Oscar</h3>
                     <div className="af-class-text af-class-dark">Co-Creator<br />‍</div>
                   </div>
-                  <div id="w-node-_52dbf247-5728-0e4a-d593-f295322bec7e-3eed4f0e" data-w-id="52dbf247-5728-0e4a-d593-f295322bec7e" style={{opacity: 1}} className="af-class-small-container">
+                  <div className="w-col w-col-3 af-class-small-container" style={{opacity: 1, paddingLeft: '20px' }}>
                     <div className="af-class-avatar-wrapper"><img src="images/Kiya-ECP-NFT.png" loading="lazy" sizes="(max-width: 479px) 89vw, (max-width: 991px) 20vw, 53.97500228881836px" srcSet="images/Kiya-ECP-NFT-p-500.png 500w, images/Kiya-ECP-NFT-p-800.png 800w, images/Kiya-ECP-NFT.png 1000w" className="af-class-image-section" /></div>
                     <h3 className="af-class-h4 af-class-dark">Kiya</h3>
                     <div className="af-class-text af-class-dark">Co-Creator<br />‍</div>
                   </div>
-                  <div id="w-node-_628df591-09c4-6583-a248-28a4cdf6b021-3eed4f0e" data-w-id="628df591-09c4-6583-a248-28a4cdf6b021" style={{opacity: 1}} className="af-class-small-container">
+                  <div className="w-col w-col-3 af-class-small-container" style={{opacity: 1, paddingLeft: '20px'}}>
                     <div className="af-class-avatar-wrapper"><img src="images/Melissa-ECP-NFT.png" loading="lazy" sizes="(max-width: 479px) 89vw, (max-width: 991px) 20vw, 83.76250457763672px" srcSet="images/Melissa-ECP-NFT-p-500.png 500w, images/Melissa-ECP-NFT-p-800.png 800w, images/Melissa-ECP-NFT.png 1000w" alt="Lead Developer of Equal Crypto People" className="af-class-image-section" /></div>
                     <h3 className="af-class-h4 af-class-dark">Melissa</h3>
                     <div className="af-class-text af-class-dark">Lead Developer<br />‍</div>
                   </div>
-                  <div id="w-node-d5ebc628-4a35-6af7-a025-b5cd33bacec4-3eed4f0e" data-w-id="d5ebc628-4a35-6af7-a025-b5cd33bacec4" style={{opacity: 1}} className="af-class-small-container">
+                  <div className="w-col w-col-3 af-class-small-container" style={{opacity: 1, paddingLeft: '20px'}}>
                     <div className="af-class-avatar-wrapper"><img src="images/Male-Sample-1.png" loading="lazy" sizes="(max-width: 479px) 89vw, (max-width: 991px) 20vw, 89.9749984741211px" srcSet="images/Male-Sample-1-p-500.png 500w, images/Male-Sample-1-p-800.png 800w, images/Male-Sample-1.png 1000w" alt="Lead Developer of Equal Crypto People" className="af-class-image-section" /></div>
                     <h3 className="af-class-h4 af-class-dark">Thomas</h3>
                     <div className="af-class-text af-class-dark">Engagement &amp; Marketing </div>

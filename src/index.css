@@ -11,3 +11,44 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+  /* #mint .w-col {
+    width: 100%;
+  } */
+  #mint .w-col-6 {
+    width: 50%;
+  }
+
+  #mint .w-col-3 {
+    width: 25%;
+  }
+  #mint .w-col input {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #mint .w-col {
+    width: 100%; 
+  }
+  #mint .w-col input {
+    width: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 575px){
+  
+  #Speakers .w-col-3 {
+    width: 100%;
+    padding-left: 0px !important;
+  }
+  #Speakers .w-col-3 .af-class-avatar-wrapper {
+    height: 416px;
+  }
+  #Speakers .w-col-3 img {
+    height: 100%;
+  }
+}
